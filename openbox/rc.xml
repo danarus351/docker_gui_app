@@ -1,0 +1,10 @@
+<openbox_config>
+  <menu>
+    <file>/etc/xdg/openbox/menu.xml</file>
+  </menu>
+  <applications>
+    <application class="*">
+      <fullscreen>yes</fullscreen>
+    </application>
+  </applications>
+</openbox_config>

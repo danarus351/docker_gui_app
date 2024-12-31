@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  my-gui-app:
+    build: .
+    privileged: true
+    environment:
+      - DISPLAY=:0
+      - QT_QPA_PLATFORM=xcb
+    devices:
+      - /dev/input/event10:/dev/input/event10
+      - /dev/input/event11:/dev/input/event11
+
+#    command: tail -f /dev/null
